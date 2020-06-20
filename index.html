@@ -1,1 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	 {
+	font-family: arial, sans-serif;	
+	width: 100%;
+}
 
+	#myheader {
+		background-color: darkred;
+		color: mistyrose;
+		text-align: center;
+		padding: 30px
+	}
+
+td, th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 8px;
+	}
+
+.quarterback {
+	background-color: darkslateblue;
+	color: whitesmoke;
+	margin: 20px;
+	padding: 10px;
+	text-align: center;
+	}
+
+</style>
+<meta charset="utf-8">
+<title>html2</title>
+</head>
+
+<body>
+	<h1 id="myheader">NFL Quarterbacks of the 2010s: Stats and Information</h1>
+	<hr>
+	<h2>Passing Yards Leaders</h2>
+	<table>
+		<tr>
+			<th>Player</th>
+			<th>Passing yards</th>
+		</tr>
+		<tr>
+			<td>Drew Brees</td>
+			<td>46,770</td>
+		</tr>
+		<tr>
+			<td>Matt Ryan</td>
+			<td>44,830</td>
+		</tr>
+		<tr>
+			<td>Phillip Rivers</td>
+			<td>44,320</td>
+		</tr>
+		<tr>
+			<td>Tom Brady</td>
+			<td>43,727</td>
+		</tr>
+		<tr>
+			<td>Matthew Stafford</td>
+			<td>38,758</td>
+		</tr>
+	</table>
+	<p>Drew Brees:</p>
+	<img src="images/drewbrees.jpg" alt="Drew Brees throwing the football" width="200" height="300">
+	<h2>Passer Rating Leaders</h2>
+	<ol>
+		<li>Aaron Rodgers (103.6 rating)</li>
+		<li>Drew Brees (102.9 rating)</li>
+		<li>Russell Wilson (101.2 rating)</li>
+		<li>Tom Brady (99.6 rating)</li>
+		<li>Peyton Manning (99.4 rating)</li>
+	</ol>
+	<p>Russell Wilson:</p>
+	<img src="images/russellwilson.jpg" alt="Russell Wilson throwing the ball" width="175" height="408">
+	<h3>Link to Russell Wilson's Wikipedia Page</h3>
+	<p>Here's a link to Russell Wilson's wikipedia page for more information on the Seattle Seahawks' passer: <a href="https://en.wikipedia.org/wiki/Russell_Wilson">Russ's Info</a></p>
+	
+	<h3>Link to a Short Description of Tom Brady</h3>
+	<p>This link leads to some basic information on Tom Brady, now the quarterback for the Tampa Bay Buccaneers: <a href="otherlocalsiteabouttombrady.html">Info on Brady</a></p>
+	
+<h1 id="otherheader">Some more great QBs that didn't quite make those lists</h1>
+<button onclick="displayresult()">Click to display a replacement header</button>
+
+<script>
+function displayresult() {
+	document.getElementById("otherheader").innerHTML = "Great QBs that got slept on"; 
+}
+</script>
+	
+<div class="quarterback">
+	<h3>Tony Romo</h3>
+	<p>Tony Romo <em title="attempted to win a Super Bowl but failed with..." style="color:aqua">headed</em> the <i>Cowboys</i> through the 2015 NFL season.</p>
+</div>
+	
+<div class="quarterback">
+	<h3>Ben Roethlisberger</h3>
+	<p>Big Ben quarterbacked the <i>Steelers</i> through all of the 2010s, outside of time missed by <b style="color:gold">injuries</b>.</p>
+</div>
+	
+</body>
+</html>
